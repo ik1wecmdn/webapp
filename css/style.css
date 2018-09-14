@@ -42,9 +42,13 @@ p{
 
 .submenu ul{
     position: absolute;
-    display: block;
+    display: none;
     background-color: #4285F4;
     padding: 0px;
+}
+
+.submenu:hover ul{
+    display: block;
 }
 
 .judul-artikel{
