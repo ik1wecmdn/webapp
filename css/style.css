@@ -1,0 +1,64 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+.logo{
+    height: 42px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.judul , .subjudul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    color: 4285F4;
+}
+
+.menu{
+    background-color: #4285F4;
+    padding:0px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    line-height: 35px;
+    display: block;
+    padding: 5px 15px; 
+}
+
+.menu a:hover{
+    background-color: tomato ;
+}
+
+.submenu ul{
+    position: absolute;
+    display: block;
+    background-color: #4285F4;
+    padding: 0px;
+}
+
+.judul-artikel{
+    color: #494949;
+}
+
+.subjudul-artikel{
+    color: #A3A3A3;
+    background: url(../images/code.png);
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    border-bottom: 5px #A3A3A3 solid;
+    display: inline-block;
+}
