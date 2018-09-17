@@ -2,47 +2,78 @@
 <html>
 <head>
 	<title>Informatika 1 - Wearnes Education Center Madiun</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <style>
+    .blog{
+      background-color: rgba(240,240,240,.7);
+      border: #1564bf 1px solid;
+      margin-bottom: 25px;
+    }
+    .blog h2{
+      background-color: #1564bf;
+      color: white;
+      padding: 5px 10px;
+      margin:0px;
+    }
+    .blog p{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .blog .more{
+      text-decoration: none;
+      display: inline-block;
+      border: #1564bf 1px solid;
+      padding: 5px 10px;
+      margin: 0px 0px 10px 10px;
+      border-radius: 3px;
+    }
+    .blog .more:hover{
+      background-color: #aacbff;
+      box-shadow: 3px 3px 10px gray;
+    }
+  </style>
 </head>
 <body>
-	<!-- logo dan judul website -->
-	<img src="images/logo.png" height="80" align="left">
-	<h2>Informatika 1 - 2018</h2>
-	<h4>Wearnes Education Center Madiun</h4>
-	
-	<!-- hr untuk garis horizontal -->
-	<hr> 
+  <div class="header">
+    <!-- logo dan judul website -->
+    <img class="logo" src="images/logo.png" height="80" align="left">
+    <h2 class="judul">Informatika 1 - 2018</h2>
+    <h4 class="subjudul">Wearnes Education Center Madiun</h4>
+  </div>
 	
 	<!-- menu -->
-	<ul>
+	<ul class="menu">
 		<li><a href="index.html">Home</a></li>
 		<li><a href="blog.html">Blog</a></li>
 		<li><a href="gallery.html">Gallery</a></li>
 		<li><a href="about.html">About</a></li>
-		<li>
-			Dashboard
+		<li class="submenu">
+			<a href="#">Dashboard</a>
 			<ul>
 				<li><a href="login.html">Login</a></li>
 				<li><a href="register.html">Register</a></li>
 			</ul>
 		</li>
 	</ul>
-	<hr>
 
 	<!-- content utama -->
 	<h1>BLOG</h1>
 
-	<h2>Judul Artikel</h2>
-	<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	<button>More</button>
-	<h2>Judul Artikel</h2>
-	<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	<button>More</button>
-	<h2>Judul Artikel</h2>
-	<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	<button>More</button>
-	<h2>Judul Artikel</h2>
-	<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	<button>More</button>
+  <div class="blog">
+    <h2>Judul Artikel</h2>
+    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <a class="more" href="#">More</a>
+  </div>
+  <div class="blog">
+    <h2>Judul Artikel</h2>
+    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <a class="more" href="#">More</a>
+  </div>
+  <div class="blog">
+    <h2>Judul Artikel</h2>
+    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <a class="more" href="#">More</a>
+  </div>
 	
 </body>
 </html>
