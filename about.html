@@ -2,31 +2,79 @@
 <html>
 <head>
 	<title>Informatika 1 - Wearnes Education Center Madiun</title>
+	<link rel="stylesheet" href="css/mystyle.css">
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+		th,td{
+			border: lightgray 2px solid;
+			padding: 3px 5px;
+		}
+		th{
+			background-color: #003b8e;
+			color:white;
+		}
+		td{
+			background-color: #5e91f2;
+			color:white;
+		}
+		
+		form{
+			border: gray 2px solid;
+			background-color: whitesmoke;
+			padding: 20px 15px;
+			width: 500px;
+			border-top: #1564bf 5px solid;
+			box-shadow: 3px 3px 15px gray;
+		}
+		label{
+			display: inline-block;
+			width: 130px;
+			vertical-align: top;
+		}
+		.form-group{
+			padding:3px 0px;
+		}
+		input,select,textarea{
+			line-height: 24px;
+			font-size:18px;
+			width: 350px;
+		}
+		button{
+			background-color: #1564bf;
+			color:white;
+			border: none;
+			line-height: 24px;
+			padding: 5px 10px;
+		}
+
+	</style>
 </head>
 <body>
-	<!-- logo dan judul website -->
-	<img src="images/logo.png" height="80" align="left">
-	<h2>Informatika 1 - 2018</h2>
-	<h4>Wearnes Education Center Madiun</h4>
-	
-	<!-- hr untuk garis horizontal -->
-	<hr> 
+	<div class="header">
+		<!-- logo dan judul website -->
+		<img class="logo" src="images/logo.png">
+		<h2 class="judul">Informatika 1 - 2018</h2>
+		<h4 class="subjudul">Wearnes Education Center Madiun</h4>
+	</div>
+
 	
 	<!-- menu -->
-	<ul>
+	<ul class="menu">
 		<li><a href="index.html">Home</a></li>
 		<li><a href="blog.html">Blog</a></li>
 		<li><a href="gallery.html">Gallery</a></li>
 		<li><a href="about.html">About</a></li>
-		<li>
-			Dashboard
+		<li class="submenu">
+			<a href="#">Dashboard</a>
 			<ul>
 				<li><a href="login.html">Login</a></li>
 				<li><a href="register.html">Register</a></li>
 			</ul>
 		</li>
 	</ul>
-	<hr>
+	
 
 	<!-- content utama -->
 	<h1>ABOUT</h1>
@@ -41,7 +89,7 @@
 
 
 	<h2>Members</h2>
-	<table border="1">
+	<table>
 		<tr>
 			<th>NO</th>
 			<th>NOMOR INDUK</th>
@@ -67,15 +115,15 @@
 
 	<h2>Leave Message</h2>
 	<form>
-		<div>
+		<div class="form-group">
 			<label>Nama Lengkap :</label>
 			<input type="text">
 		</div>
-		<div>
+		<div class="form-group">
 			<label>Email Address : </label>
 			<input type="email">
 		</div>
-		<div>
+		<div class="form-group">
 			<label>Subject :</label>
 			<select>
 				<option>Help</option>
@@ -83,11 +131,12 @@
 				<option>Other</option>
 			</select>
 		</div>
-		<div>
+		<div class="form-group">
 			<label>Message :</label>
 			<textarea rows="5"></textarea>
 		</div>
-		<div>
+		<div class="form-group">
+			<label></label>
 			<button>SEND</button>
 		</div>
 	</form>

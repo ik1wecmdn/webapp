@@ -1,0 +1,86 @@
+body{
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	/*background-color: #e8eaed;*/
+	color: #2e2f30;
+	font-family: verdana;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+p{
+	text-align: justify;
+}
+
+.header{
+	background-color:#1564bf; 
+	/*padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;*/
+	padding: 10px 15px 15px 15px;
+}
+
+.logo{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 10px;
+}
+
+.judul,.subjudul{
+	color: #fff;
+	margin:0;
+}
+
+.judul{
+	margin-bottom:3px;
+}
+
+.menu{
+	list-style-type: none;
+	background-color: #003b8e;
+	margin:0;
+	padding:0;
+}
+
+.menu li{
+	display: inline-block;
+	margin:0px;
+}
+
+.menu a{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	line-height: 36px;
+	display: block;
+	margin:0px;
+}
+
+.menu a:hover{
+	background-color: red;
+}
+
+.submenu ul{
+	list-style-type: none;
+	display: none;
+	margin:0px;
+	padding:0px;
+	position: absolute;
+	background-color: #003b8e
+}
+.submenu:hover ul{
+	display: block;
+}
+
+.content{
+	margin: 30px 5px;
+	background-color:rgba(244,244,244,.7);
+	padding: 10px 15px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 15px gray;
+}
+
