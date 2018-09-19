@@ -39,7 +39,7 @@
 		input,select,textarea{
 			line-height: 24px;
 			font-size:18px;
-			width: 350px;
+			width: 330px;
 		}
 		button{
 			background-color: #1564bf;
@@ -47,6 +47,13 @@
 			border: none;
 			line-height: 24px;
 			padding: 5px 10px;
+		}
+
+		.pesan{
+			display: block;
+			font-style: italic;
+			font-size: 12px;
+			color: tomato;
 		}
 
 	</style>
@@ -114,18 +121,20 @@
 
 
 	<h2>Leave Message</h2>
-	<form>
+	<form name="formMessage" onsubmit="return ValidasiForm()" method="post">
 		<div class="form-group">
 			<label>Nama Lengkap :</label>
-			<input type="text">
+			<input type="text" onchange="CheckNama()" id="txtNama" name="fNama">
+			<img style="display: none;" id="imgCheckNama" src="images/checked.png">
+			<span id="pesanNama" class="pesan"></span>
 		</div>
 		<div class="form-group">
 			<label>Email Address : </label>
-			<input type="email">
+			<input type="email" onchange="CheckEmail()" name="fEmail">
 		</div>
 		<div class="form-group">
 			<label>Subject :</label>
-			<select>
+			<select name="fSubject">
 				<option>Help</option>
 				<option>Suggest</option>
 				<option>Other</option>
@@ -133,13 +142,58 @@
 		</div>
 		<div class="form-group">
 			<label>Message :</label>
-			<textarea rows="5"></textarea>
+			<textarea rows="5" name="fMessage"></textarea>
 		</div>
 		<div class="form-group">
 			<label></label>
-			<button>SEND</button>
+			<button type="submit">SEND</button>
 		</div>
 	</form>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/myscript.js"></script>
+	<script>
+		function CheckNama(){
+			// pure js
+			// var nama = document.getElementById('txtNama').value;
+			// jquery
+			var nama = $('#txtNama').val();
+			if(nama==""){
+				//alert("Nama tidak boleh kosong bro...!");
+				// pure js
+				// document.getElementById('pesanNama').innerHTML = '* Nama tidak boleh kosong bro...!';
+				// document.getElementById('txtNama').style.border = '2px solid red';
+				// document.getElementById('imgCheckNama').style.display = 'none';
+				// jquery
+				$('#pesanNama').html('* Nama tidak boleh kosong bro...!');
+				$('#txtNama').css('border','2px solid red');
+				$('#imgCheckNama').hide();
+			}else{
+				// pure js
+				// document.getElementById('pesanNama').innerHTML = '';
+				// document.getElementById('txtNama').style.border = '1px solid green';
+				// document.getElementById('imgCheckNama').style.display = 'inline-block';
+				$('#pesanNama').html('');
+				$('#txtNama').css('border','1px solid green');
+				$('#imgCheckNama').show();
+			}
+		}
+		function CheckEmail(){
+			//alert('test');
+		}
+
+		function ValidasiForm(){
+			var nama    = document.forms['formMessage']['fNama'].value;
+			var email   = document.forms['formMessage']['fEmail'].value;
+			var subject = document.forms['formMessage']['fSubject'].value;
+			var message = document.forms['formMessage']['fMessage'].value;
+			if(nama=='' || email == '' || subject == '' || message == ''){
+				alert('Lengkapi data Anda...!!');
+				return false;
+			}
+
+		}
+	</script>
 
 </body>
 </html>
