@@ -2,20 +2,56 @@
 <html>
 <head>
 	<title>LOGIN</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <style>
+
+    form{
+			width: 360px;
+			background-color: rgba(240,240,240,.5);
+      border: 1px solid #ccc;
+			padding: 20px 15px;
+			position: absolute;
+			margin-top: calc(50vh - 120px);
+			margin-left: calc(50% - 180px);
+		}
+    
+    label{
+      display: block;
+      margin-top: 5px;
+    }
+    input{
+      width: calc(100% - 20px);
+      font-size: 16px;
+      padding: 3px 10px;
+    }
+    .form-button{
+      margin-top: 15px;
+    }
+    button{
+      background-color: lightgray;
+      border: gray 1px solid;
+      line-height: 30px;
+    }
+  </style>
 </head>
 <body>
-	<form>
+  
+	<form class="login-form">
 		<h2>LOGIN FORM</h2>
 		<div>
 			<label>Username / Email Address :</label>
-			<input type="email" name="">
+			<input type="email">
 		</div>
 		<div>
 			<label>Password :</label>
 			<input type="password">
 		</div>
-		<div>
+		<div class="form-button">
 			<button type="submit">LOGIN</button>
+      <button type="button">REGISTER</button>
+      <p>
+        <a href="#">Forgot Password ?</a>
+      </p>
 		</div>
 	</form>
 </body>
