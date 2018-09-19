@@ -36,23 +36,35 @@
 </head>
 <body>
   
-	<form class="login-form">
+	<form name="formLogin" class="login-form" method="POST">
 		<h2>LOGIN FORM</h2>
 		<div>
 			<label>Username / Email Address :</label>
-			<input type="email">
+			<input type="email" name="txtEmail" id="txtEmail" required>
 		</div>
 		<div>
 			<label>Password :</label>
-			<input type="password">
+			<input type="password" name="txtPassword" id="txtPassword">
 		</div>
 		<div class="form-button">
 			<button type="submit">LOGIN</button>
-      <button type="button">REGISTER</button>
+      <button type="button" onclick="Register()">REGISTER</button>
       <p>
-        <a href="#">Forgot Password ?</a>
+        <a href="javascript:ForgotPassword()">Forgot Password ?</a>
       </p>
 		</div>
-	</form>
+  </form>
+  <script>
+
+    function Register(){
+      //menuju ke halaman register.html
+      window.location = 'register.html';
+    }
+
+    function ForgotPassword(){
+      var email = prompt('Masukkan alamat email Anda..!');
+      alert('Reset password telah di kirim ke email : ' + email);
+    }
+  </script>
 </body>
 </html>
